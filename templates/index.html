@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog Breeds Prediction</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <img class="header_img" src="https://owl-stock.work/download/12430/?version=png"
+            alt="Y.S">
+        <a class="header-logo" href="#">Dog Breeds Prediction</a>
+    </header>
+
+    <div class="main">
+        <h2> AIが送信された画像の犬の犬種を識別します</h2>
+        <p>画像をアップロードしてください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="submit!" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+    </div>
+
+    <footer>
+        <img class="footer_img" src="https://owl-stock.work/download/12430/?version=png"
+            alt="Y.S">
+        <small>&copy; Dog Breeds Prediction Application</small>
+    </footer>
+</body>
+
+</html>
